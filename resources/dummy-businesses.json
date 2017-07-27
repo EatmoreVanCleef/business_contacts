@@ -1,0 +1,107 @@
+[
+   {
+      "category":"category1",
+
+       "city":"city1", "company":"company1",
+
+       "description":"description1",
+
+       "email":"email1",
+
+       "phone":"phone1",
+
+       "state":"state1",
+
+       "street_address":"street_address1",
+
+       "years_in_business":"years_in_business1",
+
+       "zipcode":"zipcode1"
+    },
+
+    {
+      "category":"category2",
+
+      "city":"city2", "company":"company2",
+
+      "description":"description2",
+
+      "email":"email2",
+
+      "phone":"phone2",
+
+      "state":"state2",
+
+      "street_address":"street_address2",
+
+      "years_in_business":"years_in_business2",
+
+      "zipcode":"zipcode2"
+    },
+
+    {
+      "category":"category3",
+
+      "city":"city3",
+
+      "company":"company3",
+
+      "description":"description3",
+
+      "email":"email3",
+
+      "phone":"phone3",
+
+      "state":"state3",
+
+      "street_address":"street_address3",
+
+      "years_in_business":"years_in_business3",
+
+      "zipcode":"zipcode3"
+   },
+
+    {
+      "category":"category4",
+
+      "city":"city4",
+
+      "company":"company4",
+
+      "description":"description4",
+
+      "email":"email4",
+
+      "phone":"phone4",
+
+      "state":"state4",
+
+      "street_address":"street_address4",
+
+      "years_in_business":"years_in_business4",
+
+      "zipcode":"zipcode4"
+   },
+
+    {
+      "category":"category5",
+
+      "city":"city5",
+
+      "company":"company5",
+
+      "description":"description5",
+
+      "email":"email5",
+
+      "phone":"phone5",
+
+      "state":"state5",
+
+      "street_address":"street_address5",
+
+      "years_in_business":"years_in_business5",
+
+      "zipcode":"zipcode5"
+   }
+]
