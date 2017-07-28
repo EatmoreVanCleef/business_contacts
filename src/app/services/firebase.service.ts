@@ -10,7 +10,7 @@ export class FirebaseService {
    businesses:FirebaseListObservable<Business[]>;
    categories:FirebaseListObservable<Category[]>;
 
-  constructor(private af:AngularFireDatabase) { }
+  constructor(private af:AngularFireDatabase) {  }
 
   getBusinesses(category = null) {
     if (category == 'all' || category == null) {
@@ -35,6 +35,14 @@ export class FirebaseService {
 
   addBusiness(business) {
     return this.businesses.push(business);
+  }
+
+  updateBusiness(key, business) {
+    return this.businesses.update(key, business);
+  }
+
+  deleteBusiness(key) {
+    return this.businesses.remove(key);
   }
 
 } // end class
