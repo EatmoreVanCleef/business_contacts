@@ -23,7 +23,7 @@ export class FirebaseService {
             equalTo: category
           }
         }) as FirebaseListObservable<Business[]>
-     } 
+     }
     return this.businesses;
   }
 
@@ -31,6 +31,10 @@ export class FirebaseService {
     this.categories = this.af.list('/categories') as
       FirebaseListObservable<Category[]>
     return this.categories;
+  }
+
+  addBusiness(business) {
+    return this.businesses.push(business);
   }
 
 } // end class
