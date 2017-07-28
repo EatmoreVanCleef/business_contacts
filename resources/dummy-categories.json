@@ -1,11 +1,11 @@
 [
-   { "name":"category1" },
+   { "name":"Health" },
 
-   { "name":"category2" },
+   { "name":"Food" },
 
-   { "name":"category3" },
+   { "name":"Education" },
 
-   { "name":"category4" },
+   { "name":"Media" },
 
-   { "name":"category5" }
+   { "name":"Other" }
 ]

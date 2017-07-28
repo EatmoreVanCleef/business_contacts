@@ -1,107 +1,111 @@
 [
    {
-      "category":"category1",
+      "category":"Health",
 
-       "city":"city1", "company":"company1",
+       "city":"Vancouver",
 
-       "description":"description1",
+       "company":"Treloar Physiotherapy",
 
-       "email":"email1",
+       "description":"Local physiotherapy clinic.",
 
-       "phone":"phone1",
+       "email":"info@treloarphysio.com",
 
-       "state":"state1",
+       "phone":"604-875-6207",
 
-       "street_address":"street_address1",
+       "state":"BC",
 
-       "years_in_business":"years_in_business1",
+       "street_address":"595 West 8th Ave",
 
-       "zipcode":"zipcode1"
+       "years_in_business":"30",
+
+       "zipcode":"V5Z 1B2"
     },
 
     {
-      "category":"category2",
+      "category":"Food",
 
-      "city":"city2", "company":"company2",
+      "city":"Vancouver",
 
-      "description":"description2",
+      "company":"Taqueria Koreano",
 
-      "email":"email2",
+      "description":"Korean tacos and other Mexi-Korean fusion dishes.",
 
-      "phone":"phone2",
+      "email":"info@takovancouver.com",
 
-      "state":"state2",
+      "phone":"778-379-7010",
 
-      "street_address":"street_address2",
+      "state":"BC",
 
-      "years_in_business":"years_in_business2",
+      "street_address":"601 Expo Blvd",
 
-      "zipcode":"zipcode2"
+      "years_in_business":"2",
+
+      "zipcode":"V6B 6B8"
     },
 
     {
-      "category":"category3",
+      "category":"Education",
 
-      "city":"city3",
+      "city":"Vancouver",
 
-      "company":"company3",
+      "company":"Lighthouse Labs",
 
-      "description":"description3",
+      "description":"Canada's leading coding & web development bootcamp",
 
-      "email":"email3",
+      "email":"info@lighthouselabs.ca",
 
-      "phone":"phone3",
+      "phone":"1-888-569-6898",
 
-      "state":"state3",
+      "state":"BC",
 
-      "street_address":"street_address3",
+      "street_address":"300-128 West Hastings St",
 
-      "years_in_business":"years_in_business3",
+      "years_in_business":"4",
 
-      "zipcode":"zipcode3"
+      "zipcode":"V6B 1G8"
    },
 
     {
-      "category":"category4",
+      "category":"Media",
 
-      "city":"city4",
+      "city":"Vancouver",
 
-      "company":"company4",
+      "company":"Canadian Broadcasting Corporation",
 
-      "description":"description4",
+      "description":"Canada's radio, television, and news provider.",
 
-      "email":"email4",
+      "email":"info@cbc.ca",
 
-      "phone":"phone4",
+      "phone":"604-555-1234",
 
-      "state":"state4",
+      "state":"BC",
 
-      "street_address":"street_address4",
+      "street_address":"775 Cambie St",
 
-      "years_in_business":"years_in_business4",
+      "years_in_business":"50ish",
 
-      "zipcode":"zipcode4"
+      "zipcode":"V6B 2R5"
    },
 
     {
-      "category":"category5",
+      "category":"Food",
 
-      "city":"city5",
+      "city":"Vancouver",
 
-      "company":"company5",
+      "company":"Japadog",
 
-      "description":"description5",
+      "description":"Storefront outlet for the popular street-food purveyors offering over a dozen Japanese-style hotdogs.",
 
-      "email":"email5",
+      "email":"japadog@hotdog.com",
 
-      "phone":"phone5",
+      "phone":"604-569-1158",
 
-      "state":"state5",
+      "state":"BC",
 
-      "street_address":"street_address5",
+      "street_address":"530 Robson St",
 
-      "years_in_business":"years_in_business5",
+      "years_in_business":"12",
 
-      "zipcode":"zipcode5"
+      "zipcode":"V6B 2B7"
    }
 ]
