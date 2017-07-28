@@ -2,7 +2,7 @@
    <div class="row">
       <div class="top-bar-left">
          <ul class="menu">
-            <li class="menu-text">BusniessContacts</li>
+            <li class="menu-text">BusinessContacts</li>
          </ul>
       </div>
       <div class="top-bar-right">
@@ -13,7 +13,7 @@
 
 <div class="row">
    <div class="large-6 columns">
-      <button class="button">Add Business</button>
+      <button class="button" (click)="changeState('add')">Add Business</button>
    </div>
    <div class="large-6 columns">
       <label for=""> Filter Categories
@@ -22,6 +22,87 @@
             <option *ngFor="let category of categories" value="{{category.name}}">{{category.name}}</option>
          </select>
       </label>
+   </div>
+</div>
+
+<div *ngIf="appState == 'add'" class="row">
+   <div class="large-12 columns">
+      <h3>Add Business</h3>
+      <form (ngSubmit)="addBusiness()" #newBusinessForm="ngForm">
+
+         <div class="row">
+            <div class="large-6 columns">
+               <label>Company
+                  <input type="text" name="company" placeholder="Company Name" ngModel>
+               </label>
+            </div>
+            <div class="large-6 columns">
+               <label> Category
+                  <select name="category" ngModel>
+                     <option *ngFor="let category of categories" value="{{category.name}}">{{category.name}}</option>
+                  </select>
+               </label>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="large-6 columns">
+               <label>Years in Business
+                  <input type="text" placeholder="Years in Business" name="years_in_business" ngModel>
+               </label>
+            </div>
+            <div class="large-6 columns">
+               <label>Description
+                  <textarea name="description" ngModel></textarea>
+               </label>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="large-6 columns">
+               <label>Phone Number
+                  <input type="text" placeholder="1-987-555-1234" name="phone" ngModel>
+               </label>
+            </div>
+            <div class="large-6 columns">
+               <label>Email
+                  <input type="email" placeholder="somebody@example.com" name="email" ngModel>
+               </label>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="large-6 columns">
+               <label>Street Address
+                  <input type="text" placeholder="123 Elm Street" name="street_address" ngModel>
+               </label>
+            </div>
+            <div class="large-6 columns">
+               <label>City
+                  <input type="text" placeholder="Springfield" name="city" ngModel>
+               </label>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="large-6 columns">
+               <label>Province
+                  <input type="text" placeholder="Province" name="state" ngModel>
+               </label>
+            </div>
+            <div class="large-6 columns">
+               <label>Postal Code
+                  <input type="text" placeholder="Postal Code" name="zipcode" ngModel>
+               </label>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="large-12 columns">
+               <button class="button" value="Submit">Submit</button>
+            </div>
+         </div>
+      </form>
    </div>
 </div>
 
