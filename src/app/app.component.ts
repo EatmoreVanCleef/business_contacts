@@ -1,18 +1,18 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { FirebaseService } from './services/firebase.service';
 import { Business } from './models/business.model';
 import { Category } from './models/category.model';
+import { BusinessDetailsComponent } from './components/business-details/business-details.component'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [ FirebaseService ]
+  providers: [ FirebaseService ],
 })
 export class AppComponent implements OnInit {
-  @ViewChild('newBusinessForm') newBusinessForm:NgForm;
   businesses:Business[];
   categories:Category[];
   appState:string;
@@ -30,6 +30,10 @@ export class AppComponent implements OnInit {
     })
   }
 
+  onNotify(message:string) {
+      this.changeState(message, null);
+  }
+
   changeState(state, key) {
     // console.log('Changing State to: ' + state);
     if (key) {
@@ -37,7 +41,7 @@ export class AppComponent implements OnInit {
       this.activeKey = key;
     }
     this.appState = state;
-    console.log(this.appState, this.activeKey)
+    console.log(this.appState, this.activeKey);
   }
 
   filterCategory(category) {
@@ -45,26 +49,6 @@ export class AppComponent implements OnInit {
     this.firebaseService.getBusinesses(category).subscribe(businesses => {
       this.businesses = businesses;
     });
-  }
-
-  addBusiness() {
-    const created_at = new Date().toString();
-    const newBusiness = {
-      category: this.newBusinessForm.value.category,
-      city: this.newBusinessForm.value.city,
-      company: this.newBusinessForm.value.company,
-      description: this.newBusinessForm.value.description,
-      email: this.newBusinessForm.value.email,
-      phone: this.newBusinessForm.value.phone,
-      state: this.newBusinessForm.value.state,
-      street_address: this.newBusinessForm.value.street_address,
-      years_in_business: this.newBusinessForm.value.years_in_business,
-      zipcode: this.newBusinessForm.value.zipcode,
-      created_at: created_at
-    }
-    this.firebaseService.addBusiness(newBusiness);
-    this.newBusinessForm.reset();
-    this.changeState('default', null);
   }
 
   showEdit(business) {
@@ -83,10 +67,7 @@ export class AppComponent implements OnInit {
       zipcode: business.zipcode,
     }
   }
-  updateBusiness() {
-    this.firebaseService.updateBusiness(this.activeKey, this.activeBusiness);
-    this.changeState('default', null);
-  }
+
 
   deleteBusiness(key) {
     this.firebaseService.deleteBusiness(key);

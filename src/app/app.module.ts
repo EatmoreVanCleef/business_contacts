@@ -7,10 +7,16 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
+import { EditBusinessComponent } from './components/edit-business/edit-business.component';
+import { NewBusinessComponent } from './components/new-business/new-business.component';
+import { BusinessDetailsComponent } from './components/business-details/business-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditBusinessComponent,
+    NewBusinessComponent,
+    BusinessDetailsComponent
   ],
   imports: [
     BrowserModule,

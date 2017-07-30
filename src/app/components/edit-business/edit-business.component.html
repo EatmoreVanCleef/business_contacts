@@ -1,0 +1,78 @@
+
+<h3>Edit Business</h3>
+<form (ngSubmit)="updateBusiness()" #newBusinessForm="ngForm">
+
+   <div class="row">
+      <div class="large-6 columns">
+         <label>Company
+            <input type="text" name="company" placeholder="Company Name" [(ngModel)]="activeBusiness.company">
+         </label>
+      </div>
+      <div class="large-6 columns">
+         <label> Category
+            <select name="category" [(ngModel)]="activeBusiness.category">
+               <option *ngFor="let category of categories" value="{{category.name}}">{{category.name}}</option>
+            </select>
+         </label>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="large-6 columns">
+         <label>Years in Business
+            <input type="text" placeholder="Years in Business" name="years_in_business" [(ngModel)]="activeBusiness.years_in_business">
+         </label>
+      </div>
+      <div class="large-6 columns">
+         <label>Description
+            <textarea name="description" [(ngModel)]="activeBusiness.description"></textarea>
+         </label>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="large-6 columns">
+         <label>Phone Number
+            <input type="text" placeholder="1-987-555-1234" name="phone" [(ngModel)]="activeBusiness.phone">
+         </label>
+      </div>
+      <div class="large-6 columns">
+         <label>Email
+            <input type="email" placeholder="somebody@example.com" name="email" [(ngModel)]="activeBusiness.email">
+         </label>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="large-6 columns">
+         <label>Street Address
+            <input type="text" placeholder="123 Elm Street" name="street_address" [(ngModel)]="activeBusiness.street_address">
+         </label>
+      </div>
+      <div class="large-6 columns">
+         <label>City
+            <input type="text" placeholder="Springfield" name="city" [(ngModel)]="activeBusiness.city">
+         </label>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="large-6 columns">
+         <label>Province
+            <input type="text" placeholder="Province" name="state" [(ngModel)]="activeBusiness.state">
+         </label>
+      </div>
+      <div class="large-6 columns">
+         <label>Postal Code
+            <input type="text" placeholder="Postal Code" name="zipcode" [(ngModel)]="activeBusiness.zipcode">
+         </label>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="large-12 columns">
+         <button class="button" value="Submit">Submit</button>
+         <button class="button warning" (click)="cancelEdit()">Cancel</button>
+      </div>
+   </div>
+</form>
